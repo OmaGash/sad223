@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
 namespace sad223
 {
     public partial class login : Form
@@ -17,7 +18,10 @@ namespace sad223
         MySqlDataReader reader;
         MySqlCommand cmd;
 
+        public menu_main new_menu = new menu_main();
         public int access_level = 0;
+        public String name_first;
+        public String name_last;
 
         public login()
         {
@@ -77,15 +81,18 @@ namespace sad223
 
                 if (count == 1)
                 {
-                    MessageBox.Show("logged in");
+                    name_first = reader.GetString("fname");
+                    name_last = reader.GetString("lname");
                     if (int.TryParse(reader.GetString("alevel"), out access_level))
                     {
-                        MessageBox.Show(access_level.ToString());
+                        Hide();
+                        
+                        new_menu.Show();
                     }
                 }
                 else
                 {
-                    MessageBox.Show(count.ToString());
+                    MessageBox.Show("Invalid Credentials");
                 }
 
                 sql.Close();

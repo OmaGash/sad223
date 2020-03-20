@@ -15,3 +15,4 @@ C:\Users\franc\OneDrive\Documents\GitHub\sad223\resume\sad223\sad223\obj\Debug\s
 C:\Users\franc\OneDrive\Documents\GitHub\sad223\resume\sad223\sad223\obj\Debug\sad223.csproj.CopyComplete
 C:\Users\franc\OneDrive\Documents\GitHub\sad223\resume\sad223\sad223\obj\Debug\sad223.exe
 C:\Users\franc\OneDrive\Documents\GitHub\sad223\resume\sad223\sad223\obj\Debug\sad223.pdb
+C:\Users\franc\OneDrive\Documents\GitHub\sad223\resume\sad223\sad223\obj\Debug\sad223.menu_main.resources
