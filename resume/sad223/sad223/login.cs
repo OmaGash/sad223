@@ -14,9 +14,19 @@ namespace sad223
     public partial class login : Form
     {
         MySqlConnection sql = new MySqlConnection();
+        MySqlDataReader reader;
+        MySqlCommand cmd;
+
+        public int access_level = 0;
+
         public login()
         {
             InitializeComponent();
+        }
+
+        private void command(String command)
+        {
+            cmd = new MySqlCommand(command, sql);
         }
 
         private void login_Load(object sender, EventArgs e)
@@ -46,7 +56,47 @@ namespace sad223
             }
             else
             {
-t_pass.UseSystemPasswordChar = true;
+                t_pass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void b_login_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int count = 0;
+                sql.Open();
+                command("SELECT * FROM tbllog WHERE `uname`='" +
+                    t_uname.Text + "' AND `pword`='" + t_pass.Text + "'" ) ;
+
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    count++;
+                }
+
+                if (count == 1)
+                {
+                    MessageBox.Show("logged in");
+                    if (int.TryParse(reader.GetString("alevel"), out access_level))
+                    {
+                        MessageBox.Show(access_level.ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(count.ToString());
+                }
+
+                sql.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sql.Dispose();
             }
         }
     }

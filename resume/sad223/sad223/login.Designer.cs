@@ -60,6 +60,7 @@
             this.b_login.TabIndex = 3;
             this.b_login.Text = "Login";
             this.b_login.UseVisualStyleBackColor = true;
+            this.b_login.Click += new System.EventHandler(this.b_login_Click);
             // 
             // t_pass
             // 
