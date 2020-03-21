@@ -74,11 +74,10 @@
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.gbox_finance = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.t_cash = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.t_balance = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.b_add = new System.Windows.Forms.Button();
@@ -526,12 +525,11 @@
             // 
             // gbox_finance
             // 
-            this.gbox_finance.Controls.Add(this.textBox18);
             this.gbox_finance.Controls.Add(this.textBox2);
-            this.gbox_finance.Controls.Add(this.textBox19);
+            this.gbox_finance.Controls.Add(this.t_balance);
             this.gbox_finance.Controls.Add(this.label2);
             this.gbox_finance.Controls.Add(this.label18);
-            this.gbox_finance.Controls.Add(this.textBox17);
+            this.gbox_finance.Controls.Add(this.t_cash);
             this.gbox_finance.Controls.Add(this.label17);
             this.gbox_finance.Location = new System.Drawing.Point(13, 303);
             this.gbox_finance.Name = "gbox_finance";
@@ -540,19 +538,13 @@
             this.gbox_finance.TabStop = false;
             this.gbox_finance.Text = "Finance";
             // 
-            // textBox17
+            // t_cash
             // 
-            this.textBox17.Location = new System.Drawing.Point(52, 19);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 1;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(112, 208);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 1;
+            this.t_cash.Location = new System.Drawing.Point(52, 19);
+            this.t_cash.Name = "t_cash";
+            this.t_cash.Size = new System.Drawing.Size(100, 20);
+            this.t_cash.TabIndex = 1;
+            this.t_cash.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
             // 
             // label17
             // 
@@ -572,13 +564,13 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "Balance";
             // 
-            // textBox19
+            // t_balance
             // 
-            this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(206, 19);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 1;
+            this.t_balance.Enabled = false;
+            this.t_balance.Location = new System.Drawing.Point(206, 19);
+            this.t_balance.Name = "t_balance";
+            this.t_balance.Size = new System.Drawing.Size(100, 20);
+            this.t_balance.TabIndex = 1;
             // 
             // label2
             // 
@@ -591,7 +583,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(364, 19);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(213, 20);
@@ -694,12 +685,11 @@
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton11;
         private System.Windows.Forms.GroupBox gbox_finance;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox t_balance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox t_cash;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button b_add;
         private System.Windows.Forms.Button b_close;

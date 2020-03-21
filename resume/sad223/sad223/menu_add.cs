@@ -34,17 +34,59 @@ namespace sad223
         {
             
             for (int i = 0; i < gbox_info.Controls.Count; i++)
-            {
+            {//check the info field for missing entries
                 if (gbox_info.Controls[i] is TextBox)
                 {
                     if (gbox_info.Controls[i].Text == "")
                     {
-                        MessageBox.Show("Missing Field");
+                        MessageBox.Show("Missing Field (Information)");
                         gbox_info.Controls[i].Focus();
-                        break;
+                        return;
                     }
                 }
             }
+
+            for (int i = 0; i < gbox_reg.Controls.Count; i++)
+            {//Check the reg field for missing entries
+                //all of the controls inside the gbox_reg are panel containers
+                bool complete = false;
+                for (int f = 0; f < gbox_reg.Controls[i].Controls.Count; f++)
+                {//check for checked radio buttons
+                    RadioButton rad = gbox_reg.Controls[i].Controls[f] as RadioButton;
+                    if (rad.Checked)
+                    {
+                        complete = true;
+                        break;
+                    }
+                }
+                if (!complete)
+                {
+                    MessageBox.Show("Missing field (Registration)");
+                    gbox_reg.Controls[i].Focus();
+                    return;
+                }
+            }
+
+            for (int i = 0; i < gbox_finance.Controls.Count; i++)
+            {//check the finance gbox
+                if (gbox_finance.Controls[i] is TextBox)
+                {//only enabled textboxes will be checked
+                    if (gbox_finance.Controls[i].Enabled)
+                    {
+                        if (gbox_finance.Controls[i].Text == "")
+                        {
+                            MessageBox.Show("Missing field (Finance)");
+                            gbox_finance.Controls[i].Focus();
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+            t_balance.Text = t_cash.Text;
         }
     }
 }
