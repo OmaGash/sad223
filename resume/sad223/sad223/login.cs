@@ -18,7 +18,7 @@ namespace sad223
         MySqlDataReader reader;
         MySqlCommand cmd;
 
-        public menu_main new_menu = new menu_main();
+        public menu_main new_menu;
         public int access_level = 0;
         public String name_first;
         public String name_last;
@@ -86,7 +86,8 @@ namespace sad223
                     if (int.TryParse(reader.GetString("alevel"), out access_level))
                     {
                         Hide();
-                        
+                        new_menu = new menu_main(name_first, name_last, this);
+                        t_pass.Text = "";
                         new_menu.Show();
                     }
                 }

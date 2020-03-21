@@ -59,6 +59,12 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="menu_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_add.Designer.cs">
+      <DependentUpon>menu_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="menu_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_add.resx">
+      <DependentUpon>menu_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu_main.resx">
       <DependentUpon>menu_main.cs</DependentUpon>

@@ -31,8 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.c_search = new System.Windows.Forms.ComboBox();
             this.t_search = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu_strip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,8 +39,11 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.deleteSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.d_table = new System.Windows.Forms.DataGridView();
+            this.menu_strip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d_table)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,10 +57,10 @@
             // 
             // c_search
             // 
+            this.c_search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.c_search.FormattingEnabled = true;
             this.c_search.Items.AddRange(new object[] {
             "ID",
-            "Year",
             "Last Name",
             "First Name",
             "Middle Name",
@@ -76,25 +78,18 @@
             this.t_search.Name = "t_search";
             this.t_search.Size = new System.Drawing.Size(100, 20);
             this.t_search.TabIndex = 2;
+            this.t_search.TextChanged += new System.EventHandler(this.t_search_TextChanged);
             // 
-            // dataGridView1
+            // menu_strip
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 57);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(286, 239);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu_strip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.recordToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(324, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menu_strip.Location = new System.Drawing.Point(0, 0);
+            this.menu_strip.Name = "menu_strip";
+            this.menu_strip.Size = new System.Drawing.Size(324, 24);
+            this.menu_strip.TabIndex = 4;
+            this.menu_strip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -109,14 +104,16 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.logoutToolStripMenuItem.Text = "Logout (Ctrl + W)";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.exitToolStripMenuItem.Text = "Exit (Ctrl + Q)";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // recordToolStripMenuItem
             // 
@@ -131,38 +128,65 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.addToolStripMenuItem.Text = "Add (Ctrl + J)";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.editToolStripMenuItem.Text = "Edit (Ctrl + K)";
             // 
             // deleteToolStripMenuItem
             // 
+            this.deleteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteSelectedToolStripMenuItem,
+            this.deleteIDToolStripMenuItem});
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
-            // menu
+            // deleteSelectedToolStripMenuItem
+            // 
+            this.deleteSelectedToolStripMenuItem.Name = "deleteSelectedToolStripMenuItem";
+            this.deleteSelectedToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.deleteSelectedToolStripMenuItem.Text = "Delete Selected";
+            // 
+            // deleteIDToolStripMenuItem
+            // 
+            this.deleteIDToolStripMenuItem.Name = "deleteIDToolStripMenuItem";
+            this.deleteIDToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.deleteIDToolStripMenuItem.Text = "Delete ID";
+            // 
+            // d_table
+            // 
+            this.d_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.d_table.Location = new System.Drawing.Point(12, 57);
+            this.d_table.Name = "d_table";
+            this.d_table.Size = new System.Drawing.Size(300, 245);
+            this.d_table.TabIndex = 5;
+            // 
+            // menu_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 314);
-            this.Controls.Add(this.dataGridView1);
+            this.ControlBox = false;
+            this.Controls.Add(this.d_table);
             this.Controls.Add(this.t_search);
             this.Controls.Add(this.c_search);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menu_strip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "menu";
+            this.MainMenuStrip = this.menu_strip;
+            this.Name = "menu_main";
             this.Text = "Record System";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.menu_main_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.menu_main_KeyDown);
+            this.menu_strip.ResumeLayout(false);
+            this.menu_strip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,8 +197,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox c_search;
         private System.Windows.Forms.TextBox t_search;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu_strip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -182,5 +205,8 @@
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.DataGridView d_table;
+        private System.Windows.Forms.ToolStripMenuItem deleteSelectedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteIDToolStripMenuItem;
     }
 }
