@@ -29,26 +29,22 @@
         private void InitializeComponent()
         {
             this.gbox_info = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.t_address = new System.Windows.Forms.TextBox();
+            this.t_bplace = new System.Windows.Forms.TextBox();
+            this.t_sex = new System.Windows.Forms.TextBox();
+            this.t_fname = new System.Windows.Forms.TextBox();
+            this.t_mname = new System.Windows.Forms.TextBox();
+            this.t_contact = new System.Windows.Forms.TextBox();
+            this.t_course = new System.Windows.Forms.TextBox();
+            this.t_status = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.t_lname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.t_work = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.t_nation = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,61 +53,61 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.t_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbox_reg = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.r_ielts = new System.Windows.Forms.RadioButton();
+            this.r_ce = new System.Windows.Forms.RadioButton();
+            this.r_toefls = new System.Windows.Forms.RadioButton();
+            this.r_es = new System.Windows.Forms.RadioButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.r_partial = new System.Windows.Forms.RadioButton();
+            this.r_full = new System.Windows.Forms.RadioButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.r_elem = new System.Windows.Forms.RadioButton();
+            this.r_college = new System.Windows.Forms.RadioButton();
+            this.r_high = new System.Windows.Forms.RadioButton();
+            this.r_pro = new System.Windows.Forms.RadioButton();
             this.gbox_finance = new System.Windows.Forms.GroupBox();
-            this.t_cash = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.t_remarks = new System.Windows.Forms.TextBox();
             this.t_balance = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.t_cash = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.b_add = new System.Windows.Forms.Button();
             this.b_close = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.date_bday = new System.Windows.Forms.DateTimePicker();
             this.gbox_info.SuspendLayout();
             this.gbox_reg.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.gbox_finance.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbox_info
             // 
-            this.gbox_info.Controls.Add(this.textBox8);
-            this.gbox_info.Controls.Add(this.textBox11);
-            this.gbox_info.Controls.Add(this.textBox16);
-            this.gbox_info.Controls.Add(this.textBox10);
-            this.gbox_info.Controls.Add(this.textBox5);
-            this.gbox_info.Controls.Add(this.textBox6);
-            this.gbox_info.Controls.Add(this.textBox7);
-            this.gbox_info.Controls.Add(this.textBox15);
-            this.gbox_info.Controls.Add(this.textBox13);
-            this.gbox_info.Controls.Add(this.textBox3);
-            this.gbox_info.Controls.Add(this.textBox9);
+            this.gbox_info.Controls.Add(this.date_bday);
+            this.gbox_info.Controls.Add(this.date);
+            this.gbox_info.Controls.Add(this.t_address);
+            this.gbox_info.Controls.Add(this.t_bplace);
+            this.gbox_info.Controls.Add(this.t_sex);
+            this.gbox_info.Controls.Add(this.t_fname);
+            this.gbox_info.Controls.Add(this.t_mname);
+            this.gbox_info.Controls.Add(this.t_contact);
+            this.gbox_info.Controls.Add(this.t_course);
+            this.gbox_info.Controls.Add(this.t_status);
             this.gbox_info.Controls.Add(this.label8);
             this.gbox_info.Controls.Add(this.label11);
-            this.gbox_info.Controls.Add(this.textBox4);
+            this.gbox_info.Controls.Add(this.t_lname);
             this.gbox_info.Controls.Add(this.label5);
-            this.gbox_info.Controls.Add(this.textBox14);
+            this.gbox_info.Controls.Add(this.t_work);
             this.gbox_info.Controls.Add(this.label7);
-            this.gbox_info.Controls.Add(this.textBox12);
+            this.gbox_info.Controls.Add(this.t_nation);
             this.gbox_info.Controls.Add(this.label10);
-            this.gbox_info.Controls.Add(this.label16);
             this.gbox_info.Controls.Add(this.label9);
             this.gbox_info.Controls.Add(this.label15);
             this.gbox_info.Controls.Add(this.label4);
@@ -120,7 +116,7 @@
             this.gbox_info.Controls.Add(this.label6);
             this.gbox_info.Controls.Add(this.label12);
             this.gbox_info.Controls.Add(this.label3);
-            this.gbox_info.Controls.Add(this.textBox1);
+            this.gbox_info.Controls.Add(this.t_id);
             this.gbox_info.Controls.Add(this.label1);
             this.gbox_info.Location = new System.Drawing.Point(13, 13);
             this.gbox_info.Name = "gbox_info";
@@ -129,82 +125,61 @@
             this.gbox_info.TabStop = false;
             this.gbox_info.Text = "Customer Information";
             // 
-            // textBox8
+            // t_address
             // 
-            this.textBox8.Location = new System.Drawing.Point(283, 79);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 6;
+            this.t_address.Location = new System.Drawing.Point(283, 79);
+            this.t_address.Name = "t_address";
+            this.t_address.Size = new System.Drawing.Size(281, 20);
+            this.t_address.TabIndex = 6;
             // 
-            // textBox11
+            // t_bplace
             // 
-            this.textBox11.Location = new System.Drawing.Point(283, 105);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 8;
+            this.t_bplace.Location = new System.Drawing.Point(283, 105);
+            this.t_bplace.Name = "t_bplace";
+            this.t_bplace.Size = new System.Drawing.Size(281, 20);
+            this.t_bplace.TabIndex = 8;
             // 
-            // textBox16
+            // t_sex
             // 
-            this.textBox16.Location = new System.Drawing.Point(464, 157);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 14;
+            this.t_sex.Location = new System.Drawing.Point(420, 131);
+            this.t_sex.Name = "t_sex";
+            this.t_sex.Size = new System.Drawing.Size(100, 20);
+            this.t_sex.TabIndex = 9;
             // 
-            // textBox10
+            // t_fname
             // 
-            this.textBox10.Location = new System.Drawing.Point(464, 105);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 9;
+            this.t_fname.Location = new System.Drawing.Point(283, 53);
+            this.t_fname.Name = "t_fname";
+            this.t_fname.Size = new System.Drawing.Size(100, 20);
+            this.t_fname.TabIndex = 4;
             // 
-            // textBox5
+            // t_mname
             // 
-            this.textBox5.Location = new System.Drawing.Point(283, 53);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.t_mname.Location = new System.Drawing.Point(464, 53);
+            this.t_mname.Name = "t_mname";
+            this.t_mname.Size = new System.Drawing.Size(100, 20);
+            this.t_mname.TabIndex = 5;
             // 
-            // textBox6
+            // t_contact
             // 
-            this.textBox6.Location = new System.Drawing.Point(464, 53);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.t_contact.Location = new System.Drawing.Point(112, 79);
+            this.t_contact.Name = "t_contact";
+            this.t_contact.Size = new System.Drawing.Size(100, 20);
+            this.t_contact.TabIndex = 5;
             // 
-            // textBox7
+            // t_course
             // 
-            this.textBox7.Location = new System.Drawing.Point(112, 79);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 5;
+            this.t_course.Location = new System.Drawing.Point(283, 157);
+            this.t_course.Name = "t_course";
+            this.t_course.Size = new System.Drawing.Size(100, 20);
+            this.t_course.TabIndex = 13;
             // 
-            // textBox15
+            // t_status
             // 
-            this.textBox15.Location = new System.Drawing.Point(283, 157);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 13;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(283, 131);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 11;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(283, 27);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(112, 105);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 7;
+            this.t_status.Location = new System.Drawing.Point(283, 131);
+            this.t_status.Name = "t_status";
+            this.t_status.Size = new System.Drawing.Size(100, 20);
+            this.t_status.TabIndex = 11;
             // 
             // label8
             // 
@@ -224,12 +199,12 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Birthplace";
             // 
-            // textBox4
+            // t_lname
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.t_lname.Location = new System.Drawing.Point(112, 53);
+            this.t_lname.Name = "t_lname";
+            this.t_lname.Size = new System.Drawing.Size(100, 20);
+            this.t_lname.TabIndex = 3;
             // 
             // label5
             // 
@@ -240,12 +215,12 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "First Name";
             // 
-            // textBox14
+            // t_work
             // 
-            this.textBox14.Location = new System.Drawing.Point(112, 157);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 12;
+            this.t_work.Location = new System.Drawing.Point(112, 157);
+            this.t_work.Name = "t_work";
+            this.t_work.Size = new System.Drawing.Size(100, 20);
+            this.t_work.TabIndex = 12;
             // 
             // label7
             // 
@@ -256,12 +231,12 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Contact Number";
             // 
-            // textBox12
+            // t_nation
             // 
-            this.textBox12.Location = new System.Drawing.Point(112, 131);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 10;
+            this.t_nation.Location = new System.Drawing.Point(112, 131);
+            this.t_nation.Name = "t_nation";
+            this.t_nation.Size = new System.Drawing.Size(100, 20);
+            this.t_nation.TabIndex = 10;
             // 
             // label10
             // 
@@ -272,19 +247,10 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Birthdate";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(389, 160);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Payment";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(389, 108);
+            this.label9.Location = new System.Drawing.Point(389, 134);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(25, 13);
             this.label9.TabIndex = 0;
@@ -353,12 +319,12 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Date";
             // 
-            // textBox1
+            // t_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.t_id.Location = new System.Drawing.Point(112, 27);
+            this.t_id.Name = "t_id";
+            this.t_id.Size = new System.Drawing.Size(100, 20);
+            this.t_id.TabIndex = 1;
             // 
             // label1
             // 
@@ -381,151 +347,151 @@
             this.gbox_reg.TabStop = false;
             this.gbox_reg.Text = "Registration";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.radioButton1);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton2);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton3);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 19);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 52);
-            this.flowLayoutPanel1.TabIndex = 15;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Elementary";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(86, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "College";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 26);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Highschool";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(87, 26);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(82, 17);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Professional";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.radioButton5);
-            this.flowLayoutPanel2.Controls.Add(this.radioButton6);
-            this.flowLayoutPanel2.Controls.Add(this.radioButton7);
-            this.flowLayoutPanel2.Controls.Add(this.radioButton8);
+            this.flowLayoutPanel2.Controls.Add(this.r_ielts);
+            this.flowLayoutPanel2.Controls.Add(this.r_ce);
+            this.flowLayoutPanel2.Controls.Add(this.r_toefls);
+            this.flowLayoutPanel2.Controls.Add(this.r_es);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(206, 19);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(194, 52);
             this.flowLayoutPanel2.TabIndex = 16;
             // 
-            // radioButton5
+            // r_ielts
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(3, 3);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(55, 17);
-            this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "IELTS";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.r_ielts.AutoSize = true;
+            this.r_ielts.Location = new System.Drawing.Point(3, 3);
+            this.r_ielts.Name = "r_ielts";
+            this.r_ielts.Size = new System.Drawing.Size(55, 17);
+            this.r_ielts.TabIndex = 0;
+            this.r_ielts.TabStop = true;
+            this.r_ielts.Text = "IELTS";
+            this.r_ielts.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // r_ce
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(64, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(120, 17);
-            this.radioButton6.TabIndex = 0;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Conversational Eng.";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.r_ce.AutoSize = true;
+            this.r_ce.Location = new System.Drawing.Point(64, 3);
+            this.r_ce.Name = "r_ce";
+            this.r_ce.Size = new System.Drawing.Size(120, 17);
+            this.r_ce.TabIndex = 0;
+            this.r_ce.TabStop = true;
+            this.r_ce.Text = "Conversational Eng.";
+            this.r_ce.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // r_toefls
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(3, 26);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(66, 17);
-            this.radioButton7.TabIndex = 0;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "TOEFLS";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.r_toefls.AutoSize = true;
+            this.r_toefls.Location = new System.Drawing.Point(3, 26);
+            this.r_toefls.Name = "r_toefls";
+            this.r_toefls.Size = new System.Drawing.Size(66, 17);
+            this.r_toefls.TabIndex = 0;
+            this.r_toefls.TabStop = true;
+            this.r_toefls.Text = "TOEFLS";
+            this.r_toefls.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // r_es
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(75, 26);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(107, 17);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Effective Speech";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.r_es.AutoSize = true;
+            this.r_es.Location = new System.Drawing.Point(75, 26);
+            this.r_es.Name = "r_es";
+            this.r_es.Size = new System.Drawing.Size(107, 17);
+            this.r_es.TabIndex = 0;
+            this.r_es.TabStop = true;
+            this.r_es.Text = "Effective Speech";
+            this.r_es.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.radioButton9);
-            this.flowLayoutPanel3.Controls.Add(this.radioButton11);
+            this.flowLayoutPanel3.Controls.Add(this.r_partial);
+            this.flowLayoutPanel3.Controls.Add(this.r_full);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(406, 19);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(171, 52);
             this.flowLayoutPanel3.TabIndex = 17;
             // 
-            // radioButton9
+            // r_partial
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(3, 3);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(127, 17);
-            this.radioButton9.TabIndex = 0;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Partial Payment (50%)";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.r_partial.AutoSize = true;
+            this.r_partial.Location = new System.Drawing.Point(3, 3);
+            this.r_partial.Name = "r_partial";
+            this.r_partial.Size = new System.Drawing.Size(127, 17);
+            this.r_partial.TabIndex = 0;
+            this.r_partial.TabStop = true;
+            this.r_partial.Text = "Partial Payment (50%)";
+            this.r_partial.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // r_full
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(3, 26);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(120, 17);
-            this.radioButton11.TabIndex = 0;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Full Payment (100%)";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.r_full.AutoSize = true;
+            this.r_full.Location = new System.Drawing.Point(3, 26);
+            this.r_full.Name = "r_full";
+            this.r_full.Size = new System.Drawing.Size(120, 17);
+            this.r_full.TabIndex = 0;
+            this.r_full.TabStop = true;
+            this.r_full.Text = "Full Payment (100%)";
+            this.r_full.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.r_elem);
+            this.flowLayoutPanel1.Controls.Add(this.r_college);
+            this.flowLayoutPanel1.Controls.Add(this.r_high);
+            this.flowLayoutPanel1.Controls.Add(this.r_pro);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 52);
+            this.flowLayoutPanel1.TabIndex = 15;
+            // 
+            // r_elem
+            // 
+            this.r_elem.AutoSize = true;
+            this.r_elem.Location = new System.Drawing.Point(3, 3);
+            this.r_elem.Name = "r_elem";
+            this.r_elem.Size = new System.Drawing.Size(77, 17);
+            this.r_elem.TabIndex = 0;
+            this.r_elem.TabStop = true;
+            this.r_elem.Text = "Elementary";
+            this.r_elem.UseVisualStyleBackColor = true;
+            // 
+            // r_college
+            // 
+            this.r_college.AutoSize = true;
+            this.r_college.Location = new System.Drawing.Point(86, 3);
+            this.r_college.Name = "r_college";
+            this.r_college.Size = new System.Drawing.Size(60, 17);
+            this.r_college.TabIndex = 0;
+            this.r_college.TabStop = true;
+            this.r_college.Text = "College";
+            this.r_college.UseVisualStyleBackColor = true;
+            // 
+            // r_high
+            // 
+            this.r_high.AutoSize = true;
+            this.r_high.Location = new System.Drawing.Point(3, 26);
+            this.r_high.Name = "r_high";
+            this.r_high.Size = new System.Drawing.Size(78, 17);
+            this.r_high.TabIndex = 0;
+            this.r_high.TabStop = true;
+            this.r_high.Text = "Highschool";
+            this.r_high.UseVisualStyleBackColor = true;
+            // 
+            // r_pro
+            // 
+            this.r_pro.AutoSize = true;
+            this.r_pro.Location = new System.Drawing.Point(87, 26);
+            this.r_pro.Name = "r_pro";
+            this.r_pro.Size = new System.Drawing.Size(82, 17);
+            this.r_pro.TabIndex = 0;
+            this.r_pro.TabStop = true;
+            this.r_pro.Text = "Professional";
+            this.r_pro.UseVisualStyleBackColor = true;
             // 
             // gbox_finance
             // 
-            this.gbox_finance.Controls.Add(this.textBox2);
+            this.gbox_finance.Controls.Add(this.t_remarks);
             this.gbox_finance.Controls.Add(this.t_balance);
             this.gbox_finance.Controls.Add(this.label2);
             this.gbox_finance.Controls.Add(this.label18);
@@ -538,31 +504,12 @@
             this.gbox_finance.TabStop = false;
             this.gbox_finance.Text = "Finance";
             // 
-            // t_cash
+            // t_remarks
             // 
-            this.t_cash.Location = new System.Drawing.Point(52, 19);
-            this.t_cash.Name = "t_cash";
-            this.t_cash.Size = new System.Drawing.Size(100, 20);
-            this.t_cash.TabIndex = 1;
-            this.t_cash.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(15, 22);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(31, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Cash";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(154, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(46, 13);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Balance";
+            this.t_remarks.Location = new System.Drawing.Point(364, 19);
+            this.t_remarks.Name = "t_remarks";
+            this.t_remarks.Size = new System.Drawing.Size(213, 20);
+            this.t_remarks.TabIndex = 1;
             // 
             // t_balance
             // 
@@ -581,12 +528,31 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Remarks";
             // 
-            // textBox2
+            // label18
             // 
-            this.textBox2.Location = new System.Drawing.Point(364, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 1;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(154, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(46, 13);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Balance";
+            // 
+            // t_cash
+            // 
+            this.t_cash.Location = new System.Drawing.Point(52, 19);
+            this.t_cash.Name = "t_cash";
+            this.t_cash.Size = new System.Drawing.Size(100, 20);
+            this.t_cash.TabIndex = 1;
+            this.t_cash.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(15, 22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(31, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Cash";
             // 
             // b_add
             // 
@@ -608,6 +574,26 @@
             this.b_close.UseVisualStyleBackColor = true;
             this.b_close.Click += new System.EventHandler(this.button2_Click);
             // 
+            // date
+            // 
+            this.date.CustomFormat = "yyyy-MM-dd";
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date.Location = new System.Drawing.Point(283, 27);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(100, 20);
+            this.date.TabIndex = 15;
+            this.date.Value = new System.DateTime(2020, 3, 21, 19, 56, 47, 0);
+            // 
+            // date_bday
+            // 
+            this.date_bday.CustomFormat = "yyyy-MM-dd";
+            this.date_bday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_bday.Location = new System.Drawing.Point(112, 104);
+            this.date_bday.Name = "date_bday";
+            this.date_bday.Size = new System.Drawing.Size(100, 20);
+            this.date_bday.TabIndex = 16;
+            this.date_bday.Value = new System.DateTime(2020, 3, 21, 19, 56, 56, 0);
+            // 
             // menu_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,12 +611,12 @@
             this.gbox_info.ResumeLayout(false);
             this.gbox_info.PerformLayout();
             this.gbox_reg.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.gbox_finance.ResumeLayout(false);
             this.gbox_finance.PerformLayout();
             this.ResumeLayout(false);
@@ -640,26 +626,22 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbox_info;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox t_address;
+        private System.Windows.Forms.TextBox t_bplace;
+        private System.Windows.Forms.TextBox t_sex;
+        private System.Windows.Forms.TextBox t_fname;
+        private System.Windows.Forms.TextBox t_mname;
+        private System.Windows.Forms.TextBox t_contact;
+        private System.Windows.Forms.TextBox t_course;
+        private System.Windows.Forms.TextBox t_status;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox t_lname;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox t_work;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox t_nation;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label4;
@@ -668,24 +650,24 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox t_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbox_reg;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton r_ielts;
+        private System.Windows.Forms.RadioButton r_ce;
+        private System.Windows.Forms.RadioButton r_toefls;
+        private System.Windows.Forms.RadioButton r_es;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton r_elem;
+        private System.Windows.Forms.RadioButton r_college;
+        private System.Windows.Forms.RadioButton r_high;
+        private System.Windows.Forms.RadioButton r_pro;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton r_partial;
+        private System.Windows.Forms.RadioButton r_full;
         private System.Windows.Forms.GroupBox gbox_finance;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox t_remarks;
         private System.Windows.Forms.TextBox t_balance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label18;
@@ -693,5 +675,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button b_add;
         private System.Windows.Forms.Button b_close;
+        private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.DateTimePicker date_bday;
     }
 }
