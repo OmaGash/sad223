@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbox_info = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbox_reg = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -73,7 +73,7 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbox_finance = new System.Windows.Forms.GroupBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -81,131 +81,131 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.b_add = new System.Windows.Forms.Button();
+            this.b_close = new System.Windows.Forms.Button();
+            this.gbox_info.SuspendLayout();
+            this.gbox_reg.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbox_finance.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbox_info
             // 
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox16);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox15);
-            this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(583, 196);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Customer Information";
+            this.gbox_info.Controls.Add(this.textBox8);
+            this.gbox_info.Controls.Add(this.textBox11);
+            this.gbox_info.Controls.Add(this.textBox16);
+            this.gbox_info.Controls.Add(this.textBox10);
+            this.gbox_info.Controls.Add(this.textBox5);
+            this.gbox_info.Controls.Add(this.textBox6);
+            this.gbox_info.Controls.Add(this.textBox7);
+            this.gbox_info.Controls.Add(this.textBox15);
+            this.gbox_info.Controls.Add(this.textBox13);
+            this.gbox_info.Controls.Add(this.textBox3);
+            this.gbox_info.Controls.Add(this.textBox9);
+            this.gbox_info.Controls.Add(this.label8);
+            this.gbox_info.Controls.Add(this.label11);
+            this.gbox_info.Controls.Add(this.textBox4);
+            this.gbox_info.Controls.Add(this.label5);
+            this.gbox_info.Controls.Add(this.textBox14);
+            this.gbox_info.Controls.Add(this.label7);
+            this.gbox_info.Controls.Add(this.textBox12);
+            this.gbox_info.Controls.Add(this.label10);
+            this.gbox_info.Controls.Add(this.label16);
+            this.gbox_info.Controls.Add(this.label9);
+            this.gbox_info.Controls.Add(this.label15);
+            this.gbox_info.Controls.Add(this.label4);
+            this.gbox_info.Controls.Add(this.label13);
+            this.gbox_info.Controls.Add(this.label14);
+            this.gbox_info.Controls.Add(this.label6);
+            this.gbox_info.Controls.Add(this.label12);
+            this.gbox_info.Controls.Add(this.label3);
+            this.gbox_info.Controls.Add(this.textBox1);
+            this.gbox_info.Controls.Add(this.label1);
+            this.gbox_info.Location = new System.Drawing.Point(13, 13);
+            this.gbox_info.Name = "gbox_info";
+            this.gbox_info.Size = new System.Drawing.Size(583, 196);
+            this.gbox_info.TabIndex = 0;
+            this.gbox_info.TabStop = false;
+            this.gbox_info.Text = "Customer Information";
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(283, 79);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 1;
+            this.textBox8.TabIndex = 6;
             // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(283, 105);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 1;
+            this.textBox11.TabIndex = 8;
             // 
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(464, 157);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 1;
+            this.textBox16.TabIndex = 14;
             // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(464, 105);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 1;
+            this.textBox10.TabIndex = 9;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(283, 53);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 1;
+            this.textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(464, 53);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 1;
+            this.textBox6.TabIndex = 5;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(112, 79);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 1;
+            this.textBox7.TabIndex = 5;
             // 
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(283, 157);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 1;
+            this.textBox15.TabIndex = 13;
             // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(283, 131);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 1;
+            this.textBox13.TabIndex = 11;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(283, 27);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(112, 105);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 1;
+            this.textBox9.TabIndex = 7;
             // 
             // label8
             // 
@@ -230,7 +230,7 @@
             this.textBox4.Location = new System.Drawing.Point(112, 53);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.textBox4.TabIndex = 3;
             // 
             // label5
             // 
@@ -246,7 +246,7 @@
             this.textBox14.Location = new System.Drawing.Point(112, 157);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 1;
+            this.textBox14.TabIndex = 12;
             // 
             // label7
             // 
@@ -262,7 +262,7 @@
             this.textBox12.Location = new System.Drawing.Point(112, 131);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 1;
+            this.textBox12.TabIndex = 10;
             // 
             // label10
             // 
@@ -370,17 +370,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Order ID";
             // 
-            // groupBox2
+            // gbox_reg
             // 
-            this.groupBox2.Controls.Add(this.flowLayoutPanel2);
-            this.groupBox2.Controls.Add(this.flowLayoutPanel3);
-            this.groupBox2.Controls.Add(this.flowLayoutPanel1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 215);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(583, 82);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Registration";
+            this.gbox_reg.Controls.Add(this.flowLayoutPanel2);
+            this.gbox_reg.Controls.Add(this.flowLayoutPanel3);
+            this.gbox_reg.Controls.Add(this.flowLayoutPanel1);
+            this.gbox_reg.Location = new System.Drawing.Point(13, 215);
+            this.gbox_reg.Name = "gbox_reg";
+            this.gbox_reg.Size = new System.Drawing.Size(583, 82);
+            this.gbox_reg.TabIndex = 1;
+            this.gbox_reg.TabStop = false;
+            this.gbox_reg.Text = "Registration";
             // 
             // flowLayoutPanel1
             // 
@@ -391,7 +391,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 19);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 52);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.TabIndex = 15;
             // 
             // radioButton1
             // 
@@ -446,7 +446,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(206, 19);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(194, 52);
-            this.flowLayoutPanel2.TabIndex = 0;
+            this.flowLayoutPanel2.TabIndex = 16;
             // 
             // radioButton5
             // 
@@ -500,7 +500,7 @@
             this.flowLayoutPanel3.Location = new System.Drawing.Point(406, 19);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(171, 52);
-            this.flowLayoutPanel3.TabIndex = 0;
+            this.flowLayoutPanel3.TabIndex = 17;
             // 
             // radioButton9
             // 
@@ -524,21 +524,21 @@
             this.radioButton11.Text = "Full Payment (100%)";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // gbox_finance
             // 
-            this.groupBox3.Controls.Add(this.textBox18);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.textBox19);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox17);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Location = new System.Drawing.Point(13, 303);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(583, 51);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Finance";
+            this.gbox_finance.Controls.Add(this.textBox18);
+            this.gbox_finance.Controls.Add(this.textBox2);
+            this.gbox_finance.Controls.Add(this.textBox19);
+            this.gbox_finance.Controls.Add(this.label2);
+            this.gbox_finance.Controls.Add(this.label18);
+            this.gbox_finance.Controls.Add(this.textBox17);
+            this.gbox_finance.Controls.Add(this.label17);
+            this.gbox_finance.Location = new System.Drawing.Point(13, 303);
+            this.gbox_finance.Name = "gbox_finance";
+            this.gbox_finance.Size = new System.Drawing.Size(583, 51);
+            this.gbox_finance.TabIndex = 18;
+            this.gbox_finance.TabStop = false;
+            this.gbox_finance.Text = "Finance";
             // 
             // textBox17
             // 
@@ -597,24 +597,25 @@
             this.textBox2.Size = new System.Drawing.Size(213, 20);
             this.textBox2.TabIndex = 1;
             // 
-            // button1
+            // b_add
             // 
-            this.button1.Location = new System.Drawing.Point(440, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.b_add.Location = new System.Drawing.Point(440, 366);
+            this.b_add.Name = "b_add";
+            this.b_add.Size = new System.Drawing.Size(75, 23);
+            this.b_add.TabIndex = 19;
+            this.b_add.Text = "Add";
+            this.b_add.UseVisualStyleBackColor = true;
+            this.b_add.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // b_close
             // 
-            this.button2.Location = new System.Drawing.Point(521, 366);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Close";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.b_close.Location = new System.Drawing.Point(521, 366);
+            this.b_close.Name = "b_close";
+            this.b_close.Size = new System.Drawing.Size(75, 23);
+            this.b_close.TabIndex = 20;
+            this.b_close.Text = "Close";
+            this.b_close.UseVisualStyleBackColor = true;
+            this.b_close.Click += new System.EventHandler(this.button2_Click);
             // 
             // menu_add
             // 
@@ -622,32 +623,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 401);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.b_close);
+            this.Controls.Add(this.b_add);
+            this.Controls.Add(this.gbox_finance);
+            this.Controls.Add(this.gbox_reg);
+            this.Controls.Add(this.gbox_info);
             this.Name = "menu_add";
             this.Text = "menu_add";
             this.Load += new System.EventHandler(this.menu_add_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.gbox_info.ResumeLayout(false);
+            this.gbox_info.PerformLayout();
+            this.gbox_reg.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbox_finance.ResumeLayout(false);
+            this.gbox_finance.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbox_info;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox16;
@@ -678,7 +679,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbox_reg;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
@@ -692,7 +693,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbox_finance;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox19;
@@ -700,7 +701,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button b_add;
+        private System.Windows.Forms.Button b_close;
     }
 }

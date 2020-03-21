@@ -29,5 +29,22 @@ namespace sad223
             main_menu.Show();
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            for (int i = 0; i < gbox_info.Controls.Count; i++)
+            {
+                if (gbox_info.Controls[i] is TextBox)
+                {
+                    if (gbox_info.Controls[i].Text == "")
+                    {
+                        MessageBox.Show("Missing Field");
+                        gbox_info.Controls[i].Focus();
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
