@@ -21,6 +21,7 @@ namespace sad223
         DataTable dtable;
 
         Form main_menu;
+        int method;
         private void command(String command)
         {
             cmd = new MySqlCommand(command, sql);
@@ -38,8 +39,9 @@ namespace sad223
             adapter.Update(dtable);
             table.DataSource = bind;
         }
-        public menu_add(Form prev_menu)
+        public menu_add(Form prev_menu, int mode)
         {
+            method = mode;
             main_menu = prev_menu;
             InitializeComponent();
         }
@@ -47,7 +49,18 @@ namespace sad223
         private void menu_add_Load(object sender, EventArgs e)
         {
             sql.ConnectionString = "server=localhost;userid=root;password=test;database=record system";
-
+            switch (method)
+            {
+                case 0:
+                    Text = "Add Record";
+                    break;
+                case 1:
+                    Text = "Update Record";
+                    b_add.Text = "Update";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -136,6 +149,7 @@ namespace sad223
                                     ",'" + t_remarks.Text + "')");
                 cmd.ExecuteNonQuery();
                 sql.Close();
+                MessageBox.Show("Entries added successfully.");
             }
             catch (MySqlException ex)
             {
@@ -146,6 +160,7 @@ namespace sad223
             {
                 sql.Dispose();
             }
+            b_close.PerformClick();
         }
 
         private void textBox17_TextChanged(object sender, EventArgs e)

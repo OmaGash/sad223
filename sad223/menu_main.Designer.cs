@@ -39,8 +39,6 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.d_table = new System.Windows.Forms.DataGridView();
             this.menu_strip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.d_table)).BeginInit();
@@ -135,35 +133,25 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-            this.editToolStripMenuItem.Text = "Edit (Ctrl + K)";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.editToolStripMenuItem.Text = "Update Selected (Ctrl + K)";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteSelectedToolStripMenuItem,
-            this.deleteIDToolStripMenuItem});
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // deleteSelectedToolStripMenuItem
-            // 
-            this.deleteSelectedToolStripMenuItem.Name = "deleteSelectedToolStripMenuItem";
-            this.deleteSelectedToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.deleteSelectedToolStripMenuItem.Text = "Delete Selected";
-            // 
-            // deleteIDToolStripMenuItem
-            // 
-            this.deleteIDToolStripMenuItem.Name = "deleteIDToolStripMenuItem";
-            this.deleteIDToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.deleteIDToolStripMenuItem.Text = "Delete ID";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.deleteToolStripMenuItem.Text = "Delete Selected (Ctrl + L)";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // d_table
             // 
+            this.d_table.AllowUserToAddRows = false;
             this.d_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.d_table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.d_table.Location = new System.Drawing.Point(12, 57);
             this.d_table.Name = "d_table";
+            this.d_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.d_table.Size = new System.Drawing.Size(300, 245);
             this.d_table.TabIndex = 5;
             // 
@@ -182,6 +170,7 @@
             this.MainMenuStrip = this.menu_strip;
             this.Name = "menu_main";
             this.Text = "Record System";
+            this.Activated += new System.EventHandler(this.menu_main_Activated);
             this.Load += new System.EventHandler(this.menu_main_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.menu_main_KeyDown);
             this.menu_strip.ResumeLayout(false);
@@ -206,7 +195,5 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.DataGridView d_table;
-        private System.Windows.Forms.ToolStripMenuItem deleteSelectedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteIDToolStripMenuItem;
     }
 }

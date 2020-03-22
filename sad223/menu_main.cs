@@ -24,6 +24,7 @@ namespace sad223
         String fname;
         String lname;
         String search_type;
+        bool can_update = false;
         Form main_form;
 
         private void command(String command)
@@ -31,7 +32,7 @@ namespace sad223
             cmd = new MySqlCommand(command, sql);
         }
 
-        private void uupdate(DataGridView table)
+        private void uupdate()
         {
             adapter = new MySqlDataAdapter();
             bind = new BindingSource();
@@ -41,7 +42,7 @@ namespace sad223
             adapter.Fill(dtable);
             bind.DataSource = dtable;
             adapter.Update(dtable);
-            table.DataSource = bind;
+            d_table.DataSource = bind;
                 }
 
         public menu_main(String first_name, String last_name, Form login)
@@ -60,7 +61,7 @@ namespace sad223
             {
                 sql.Open();
                 command("SELECT * FROM tblrecord");
-                uupdate(d_table);
+                uupdate();
                 sql.Close();
             }
             catch (MySqlException ex)
@@ -130,14 +131,23 @@ namespace sad223
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             main_form.Show();
+            can_update = false;
             this.Close();
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Hide();
-            menu_add new_menu = new menu_add(this);
+            menu_add new_menu = new menu_add(this, 0);
+            can_update = true;
             new_menu.Show();
+        }
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Hide();
+            menu_add new_menu = new menu_add(this, 1);
+            new_menu.Show();*/
+            MessageBox.Show(d_table.SelectedRows.Count.ToString());
         }
 
         private void t_search_TextChanged(object sender, EventArgs e)
@@ -146,7 +156,7 @@ namespace sad223
             {
                 sql.Open();
                 command("SELECT * FROM tblrecord WHERE `" + search_type + "` LIKE '" + t_search.Text + "%'");
-                uupdate(d_table);
+                uupdate();
                 sql.Close();
             }
             catch (MySqlException ex)
@@ -156,6 +166,67 @@ namespace sad223
             finally
             {
                 sql.Dispose();
+            }
+        }
+
+        private void menu_main_Activated(object sender, EventArgs e)
+        {
+            if (can_update)
+            {
+                try
+                {
+                    if (sql.State != ConnectionState.Open) sql.Open();
+                    command("SELECT * FROM tblrecord");
+                    uupdate();
+                    sql.Close();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sql.Dispose();
+                }
+            }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (d_table.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("No row selected.");
+                return;
+            }
+            can_update = false;
+            DialogResult answer = MessageBox.Show("Delete rows?", "Confirm Deletion", MessageBoxButtons.YesNo);
+            MySqlCommandBuilder builder = new MySqlCommandBuilder(adapter);
+            if (answer == DialogResult.Yes)
+            {
+                //MessageBox.Show(d_table.SelectedRows.ToString());
+                try
+                {
+                    sql.Open();
+                    adapter = new MySqlDataAdapter("SELECT * FROM tblrecord", sql);
+                    foreach (DataGridViewRow row in d_table.SelectedRows)
+                    {
+                        command("DELETE FROM tblrecord WHERE `customerid`=" + row.Cells[0].Value);
+                        uupdate();
+                    }
+                    MessageBox.Show("Deleted successfully.");
+                    command("SELECT * FROM tblrecord");
+                    uupdate();
+                    sql.Close();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sql.Dispose();
+                    can_update = true;
+                }
             }
         }
     }
