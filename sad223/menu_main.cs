@@ -199,7 +199,7 @@ namespace sad223
                 return;
             }
             can_update = false;
-            DialogResult answer = MessageBox.Show("Delete rows?", "Confirm Deletion", MessageBoxButtons.YesNo);
+            DialogResult answer = MessageBox.Show("Delete row?", "Confirm Deletion", MessageBoxButtons.YesNo);
             MySqlCommandBuilder builder = new MySqlCommandBuilder(adapter);
             if (answer == DialogResult.Yes)
             {

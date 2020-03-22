@@ -147,9 +147,13 @@
             // d_table
             // 
             this.d_table.AllowUserToAddRows = false;
+            this.d_table.AllowUserToDeleteRows = false;
+            this.d_table.AllowUserToResizeColumns = false;
+            this.d_table.AllowUserToResizeRows = false;
             this.d_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.d_table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.d_table.Location = new System.Drawing.Point(12, 57);
+            this.d_table.MultiSelect = false;
             this.d_table.Name = "d_table";
             this.d_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.d_table.Size = new System.Drawing.Size(300, 245);
