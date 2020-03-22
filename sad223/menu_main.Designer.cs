@@ -133,8 +133,8 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.editToolStripMenuItem.Text = "Update Selected (Ctrl + K)";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.editToolStripMenuItem.Text = "Update Changes (Ctrl + K)";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem

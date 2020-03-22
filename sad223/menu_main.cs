@@ -146,8 +146,25 @@ namespace sad223
         {
             /*Hide();
             menu_add new_menu = new menu_add(this, 1);
-            new_menu.Show();*/
-            MessageBox.Show(d_table.SelectedRows.Count.ToString());
+            new_menu.Show();
+            MessageBox.Show(d_table.SelectedRows.Count.ToString());*/
+            try
+            {
+                sql.Open();
+                MySqlCommandBuilder builder = new MySqlCommandBuilder(adapter);
+                adapter.Update(dtable);
+                command("SELECT * FROM tblrecord");
+                uupdate();
+                sql.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sql.Dispose();
+            }
         }
 
         private void t_search_TextChanged(object sender, EventArgs e)
