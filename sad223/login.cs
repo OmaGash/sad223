@@ -39,7 +39,7 @@ namespace sad223
             try
             {
                 sql.Open();
-                MessageBox.Show("works");
+                //MessageBox.Show("works");
                 sql.Close();
             }
             catch (MySqlException ex)
@@ -86,7 +86,7 @@ namespace sad223
                     if (int.TryParse(reader.GetString("alevel"), out access_level))
                     {
                         Hide();
-                        new_menu = new menu_main(name_first, name_last, this);
+                        new_menu = new menu_main(name_first, name_last, this, access_level);
                         t_pass.Text = "";
                         new_menu.Show();
                     }

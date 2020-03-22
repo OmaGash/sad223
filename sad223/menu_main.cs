@@ -25,6 +25,7 @@ namespace sad223
         String lname;
         String search_type;
         bool can_update = false;
+        int access_level = 0;
         Form main_form;
 
         private void command(String command)
@@ -45,17 +46,31 @@ namespace sad223
             d_table.DataSource = bind;
                 }
 
-        public menu_main(String first_name, String last_name, Form login)
+        public menu_main(String first_name, String last_name, Form login, int level)
         {
             fname = first_name;
             lname = last_name;
             main_form = login;
+            access_level = level;
             InitializeComponent();
         }
         private void menu_main_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Welcome " + fname + " " + lname);
             this.KeyPreview = true;
+            switch (access_level)
+            {
+                case 1:
+                    recordToolStripMenuItem.Enabled = true;
+                    d_table.ReadOnly = false;
+                    break;
+                case 2:
+                    recordToolStripMenuItem.Enabled = false;
+                    d_table.ReadOnly = true;
+                    break;
+                default:
+                    break;
+            }
             sql.ConnectionString = "server=localhost;userid=root;password=test;database=record system";
             try
             {
@@ -108,6 +123,7 @@ namespace sad223
 
         private void menu_main_KeyDown(object sender, KeyEventArgs e)
         {
+            
             if(e.Control && e.KeyCode == Keys.W)
             {
                 logoutToolStripMenuItem.PerformClick();
@@ -116,9 +132,17 @@ namespace sad223
             {
                 exitToolStripMenuItem.PerformClick();
             }
-            else if(e.Control && e.KeyCode == Keys.J)
+            else if(e.Control && e.KeyCode == Keys.J && access_level == 1)
             {
                 addToolStripMenuItem.PerformClick();
+            }
+            else if(e.Control && e.KeyCode == Keys.K && access_level == 1)
+            {
+                editToolStripMenuItem.PerformClick();
+            }
+            else if(e.Control && e.KeyCode == Keys.L && access_level == 1)
+            {
+                deleteToolStripMenuItem.PerformClick();
             }
         }
 
